@@ -1,0 +1,18 @@
+Regarding:
+
+    E: pymdown-extensions source: source-is-missing docs/theme/assets/pymdownx-extras/extra-loader-5bb526e4.js
+    E: pymdown-extensions source: source-is-missing docs/theme/assets/pymdownx-extras/material-extra-3rdparty-69a692a6.js
+    E: pymdown-extensions source: source-is-missing docs/theme/assets/pymdownx-extras/material-extra-theme-7c147bb7.js
+
+upstream provided explanation in
+
+    https://github.com/facelessuser/pymdown-extensions/discussions/1726
+
+and in particular in
+
+    https://github.com/facelessuser/pymdown-extensions/issues/1536#issuecomment-998045994
+
+that the source files for this compiled/minified JavaScript files are in
+
+    docs/src/js
+    docs/src/scss

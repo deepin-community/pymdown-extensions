@@ -1,0 +1,22 @@
+From: Isaac Muse <faceless.shop@gmail.com>
+Date: Mon, 4 Mar 2024 17:40:16 -0700
+Subject: Fix SmartSymbols in TOC tokens
+
+Origin: upstream, https://github.com/facelessuser/pymdown-extensions/pull/2327
+---
+ pymdownx/smartsymbols.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pymdownx/smartsymbols.py b/pymdownx/smartsymbols.py
+index 9eb3330..1bb3137 100644
+--- a/pymdownx/smartsymbols.py
++++ b/pymdownx/smartsymbols.py
+@@ -164,7 +164,7 @@ class SmartSymbolsExtension(Extension):
+ 
+         inline_processor = treeprocessors.InlineProcessor(md)
+         inline_processor.inlinePatterns = self.patterns
+-        md.treeprocessors.register(inline_processor, "smart-symbols", 2.1)
++        md.treeprocessors.register(inline_processor, "smart-symbols", 6.1)
+ 
+ 
+ def makeExtension(*args, **kwargs):
